@@ -1,0 +1,1 @@
+So the body is symmetric , just print 2 copies of the body and use the peg to connect them. you probably want to use super glue on one side of the pegs so they are stuck to one side of the body.
