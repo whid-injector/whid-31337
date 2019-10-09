@@ -31,9 +31,7 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 - **A SIM Card** able to work with a GSM/2G operator.
 - **>= 500mAh LiPo battery** (e.g. <https://tinyurl.com/ycvf2r4x> ) 
 	Beside WHID Elite itself, the only further hardware needed for testing WHID Elite is a LiPo battery of at least 500mAh (PERSONALLY I RECOMMEND >600mAh. BETTER >1000mAh).<br/>
-	This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide.<br/>
-	Though, considering that the newer laptops can deliver 1000mAh*, in some cases is possible to run WHID Elite without battery. *(Except for my MacBook Air, where without LiPo, it was not running properly).<br/>
-	**Though, is NOT recommended to use it WITHOUT LiPo!!!**
+	This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide.<br/>	**It is NOT recommended to run WHID-Elite WITHOUT LiPo!!!**
  - To connect the LiPo battery, I do recommend to use JST-PH 1.25 male/female connectors. Thus you will be able to easily detach it when not in use. (e.g. <https://tinyurl.com/y9kmq27b> )
  
  - **[FOR WORLD]** In case you have no National Operator that sells GSM SIMs, You can always try to check if your country is supported by https://www.thingsmobile.com
