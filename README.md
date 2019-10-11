@@ -28,16 +28,17 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 [6] https://twitter.com/WHID_Injector/status/1005464541336129536
 
 # Mandatory Hardware Needed:
-- **A SIM Card** able to work with a GSM/2G operator.
+- **A SIM Card** able to work with a GSM/2G operator. 
 - **>= 500mAh LiPo battery** (e.g. <https://tinyurl.com/ycvf2r4x> ) 
 	Beside WHID Elite itself, the only further hardware needed for testing WHID Elite is a LiPo battery of at least 500mAh (PERSONALLY I RECOMMEND >600mAh. BETTER >1000mAh).<br/>
 	This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide.<br/>	**It is NOT recommended to run WHID-Elite WITHOUT LiPo!!!**
  - To connect the LiPo battery, I do recommend to use JST-PH 1.25 male/female connectors. Thus you will be able to easily detach it when not in use. (e.g. <https://tinyurl.com/y9kmq27b> )
  
+  - **[NOTE]** In case you live in a country where the 2G/GSM networks are not available anymore… you will need to create your own GSM network. Which means you will need to run either OpenBTS or OpenBSC with a dedicated HW (e.g. LimeSDR, USRP, BladeRF, NanoBTS, etc.). You will just need to be able to send and receive SMS. No data traffic (i.e. GPRS/EDGE) needed at this stage.
+ Said that, you can always use the standalone sketches to test indiviual features (e.g. Mousejacking, Jamming, Transmitting ASK/OOK sequences, etc.)<br/>
+ 
  - **[FOR WORLD]** In case you have no National Operator that sells GSM SIMs, You can always try to check if your country is supported by https://www.thingsmobile.com
  
- - **[FOR US/CANADA/JAPAN]** In case you live in a country where the 2G/GSM networks are not available anymore… you will need to create your own GSM network. Which means you will need to run either OpenBTS or OpenBSC with a dedicated HW (e.g. LimeSDR, USRP, BladeRF, NanoBTS, etc.). You will just need to be able to send and receive SMS. No data traffic (i.e. GPRS/EDGE) needed at this stage.
- Said that, you can always use the standalone sketches to test indiviual features (e.g. Mousejacking, Jamming, Transmitting ASK/OOK sequences, etc.)<br/>
  - **[FOR US]** You can always check if your area is covered by TING, which still provides 2G network within USA  https://ting.com/shop/gsmSIM Check Coverage here https://ting.com/coverage# <br/>
  
  ![image](https://user-images.githubusercontent.com/26245612/52553931-eab8f600-2ded-11e9-9c16-18989a11fc96.png)
