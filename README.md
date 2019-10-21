@@ -4,12 +4,12 @@ WHID Elite is a GSM-enabled Open-Source Multi-Purpose Offensive Device that allo
 Some of the main features of WHIDelite are:
 - Remote control over GSM/2G Networks
 - Remote HID Injection
-- Bypass Air-Gapped Environments [0]
-- Support for Mousejacking Attacks [1] [2]
-- Radio Hacking related Attacks [3] [5]
-- Embedded USB HUB to easily weaponize USB Gadgets [4]
+- [Bypass Air-Gapped Environments](https://twitter.com/LucaBongiorni/status/963693468282445824)
+- [Support for Mousejacking Attacks](https://twitter.com/WHID_Injector/status/1050482412218707968)
+- [Radio Hacking related Attacks](https://twitter.com/WHID_Injector/status/1065332359426392068)
+- [Embedded USB HUB to easily weaponize USB Gadgets](https://twitter.com/WHID_Injector/status/1067517057074380806)
 - GPS Location of WHIDElite
-- Remote Audio Surveillance [6]
+- [Remote Audio Surveillance](https://twitter.com/WHID_Injector/status/1005464541336129536)
 
 [![Black Hat Arsenal Europe](https://github.com/toolswatch/badges/blob/master/arsenal/europe/2017.svg)](http://www.toolswatch.org/2018/01/black-hat-arsenal-top-10-security-tools/) [![Black Hat Arsenal USA](https://github.com/toolswatch/badges/blob/master/arsenal/usa/2018.svg)](https://www.blackhat.com/us-18/arsenal/schedule/index.html#whid-injector-and-whid-elite-a-new-generation-of-hid-offensive-devices-10459) [![ToolsWatch Best Tools](https://github.com/toolswatch/badges/blob/master/toptools/2017.svg)](http://www.toolswatch.org/2018/01/black-hat-arsenal-top-10-security-tools/)
 
@@ -18,14 +18,6 @@ Hardware Design Author: Luca Bongiorni - https://twitter.com/lucabongiorni
 For more information about it checkout http://elite.whid.ninja and do follow the news feed at https://twitter.com/WHID_Injector
 
 Disclaimer: This research tool has been designed to be used ONLY by experienced personnel against targets in-scope during a Security Engagement or to raise security awareness during trainings. Neither the manufacturer, nor the Author are responsible for any damage occurred by its misuse.
-
-[0] https://twitter.com/LucaBongiorni/status/963693468282445824
-[1] https://www.mousejack.com/
-[2] https://twitter.com/WHID_Injector/status/1050482412218707968
-[3] https://twitter.com/WHID_Injector/status/1065332359426392068
-[4] https://twitter.com/WHID_Injector/status/1067517057074380806
-[5] https://twitter.com/WHID_Injector/status/1066425435851055104
-[6] https://twitter.com/WHID_Injector/status/1005464541336129536
 
 # Mandatory Hardware Needed:
 - **A SIM Card** able to work with a GSM/2G operator. 
