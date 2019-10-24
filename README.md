@@ -94,3 +94,13 @@ The bootloop may be cause due some of the following reasons:
 - The place where you are using WHIDelite has low 2G coverage, which makes the SIM800L encrease its transmission power, which turns into more current absorption. Either try to change place or change Mobile Netowrk Operator (MNO) SIM card, which may have better coverage in that area.
 - You connected external boards (i.e. TX/RX) to P2's VCC, instead of P3. In this way those board will draw current from the internal LiPo and reduce the available current for the SIM800L to operate correctly. If you need to use WHIDelite with a Standalone Firmware... leave it as it is. Instead, if you need to use the remote control over 2G network... just connect the VCC of the external device to P3's VCC. Obviously, you will either need a battery pack connected to the USB connector or connect WHIDelite directly to a PC.
 - Final rule of thumb... always try to reflash it and try on a USB port that is not 3.0 or use a 2.0 hub between WHIDelite and the 3.0 port.
+
+# Antenna Mod
+The NRF24 Module is using by default the internal PCB antenna. However by moving the SMD component (a 0402/47pF capacitor) in the image below you can the route the radio signal to the UFL connector. Thus you will have to attach a 2.4GHz antenna through the UFL connector.
+
+IMPORTANT: Do this ONLY if you know what you are doing. Obviously don't open issues nor complain to the manufacturer if you fuckup something. You got warned!
+
+![image](https://user-images.githubusercontent.com/26245612/67474042-74e37a80-f65c-11e9-89a2-4b7f50a9a7ce.png)
+
+
+
