@@ -15,9 +15,6 @@ Some of the main features of WHIDelite are:
 - [Remote Audio Surveillance](https://twitter.com/WHID_Injector/status/1005464541336129536)
 
 
-
-
-
 Hardware Design Author: Luca Bongiorni - https://twitter.com/lucabongiorni
 
 For more information about it checkout http://elite.whid.ninja and do follow the news feed at https://twitter.com/WHID_Injector
@@ -26,27 +23,46 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 
 # Mandatory Hardware Needed:
 - **A SIM Card** able to work with a GSM/2G operator. 
-- **>= 500mAh LiPo battery** (e.g. <https://tinyurl.com/ycvf2r4x> ) 
-	Beside WHID Elite itself, the only further hardware needed for testing WHID Elite is a LiPo battery of at least 500mAh (PERSONALLY I RECOMMEND >600mAh. BETTER >1000mAh).<br/>
-	This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide.<br/>	**It is NOT recommended to run WHID-Elite WITHOUT LiPo!!!**
- - To connect the LiPo battery, I do recommend to use JST-PH 1.25 male/female connectors. Thus you will be able to easily detach it when not in use. (e.g. <https://tinyurl.com/y9kmq27b> )
- 
-  - **[NOTE]** In case you live in a country where the 2G/GSM networks are not available anymore… you will need to create your own GSM network. Which means you will need to run either OpenBTS or OpenBSC with a dedicated HW (e.g. LimeSDR, USRP, BladeRF, NanoBTS, etc.). You will just need to be able to send and receive SMS. No data traffic (i.e. GPRS/EDGE) needed at this stage.
+	- **[NOTE]** In case you live in a country where the 2G/GSM networks are not available anymore… you will need to create your own GSM network. Which means you will need to run either OpenBTS or OpenBSC with a dedicated HW (e.g. LimeSDR, USRP, BladeRF, NanoBTS, etc.). You will just need to be able to send and receive SMS. No data traffic (i.e. GPRS/EDGE) needed at this stage.
  Said that, you can always use the standalone sketches to test indiviual features (e.g. Mousejacking, Jamming, Transmitting ASK/OOK sequences, etc.)<br/>
  
- - **[FOR WORLD]** In case you have no National Operator that sells GSM SIMs, You can always try to check if your country is supported by https://www.thingsmobile.com Check Coverage here https://www.thingsmobile.com/business/coverage
+ 	- **[FOR WORLD]** In case you have no National Operator that sells GSM SIMs, You can always try to check if your country is supported by https://www.thingsmobile.com Check Coverage here https://www.thingsmobile.com/business/coverage
  
- - **[FOR US]** You can always check if your area is covered by TING, which still provides 2G network within USA  https://ting.com/shop/gsmSIM Check Coverage here https://ting.com/coverage# <br/>
+	 - **[FOR US]** You can always check if your area is covered by TING, which still provides 2G network within USA  https://ting.com/shop/gsmSIM Check Coverage here https://ting.com/coverage# <br/>
  
  ![image](https://user-images.githubusercontent.com/26245612/52553931-eab8f600-2ded-11e9-9c16-18989a11fc96.png)
  
+- **>= 500mAh LiPo battery** (e.g. <https://tinyurl.com/ycvf2r4x> ) 
+	Beside WHID Elite itself, the only further hardware needed for testing WHID Elite is a LiPo battery of at least 500mAh (PERSONALLY I RECOMMEND >600mAh. BETTER >1000mAh). This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide. **It is NOT recommended to run WHID-Elite WITHOUT LiPo!!!**
+	
+ - **JST-PH 1.25 male/female connectors** To connect the LiPo battery, I do recommend to use JST-PH 1.25 male/female connectors. Thus you will be able to easily detach it when not in use. (e.g. <https://tinyurl.com/y9kmq27b> )
+ 
+
+ 
 # Optional Hardware Needed:
+
+- **In case you Modded the NRF24 to use an external Antenna...** Here some possible UFL/IPEX 2.4GHz antenna I am using:
+	- https://www.aliexpress.com/item/32998815857.html
+	- https://www.aliexpress.com/item/32816113061.html
+	- https://www.aliexpress.com/item/32504985819.html
+	- https://www.aliexpress.com/item/1150268297.html
+	
 - **In case you would like to test the ASKTX, ASKRX and JAM commands as well, you will need an external TX connected on the D11 and/or D7 Pins[o] and the RX on the D3 pin [o]. And a test lab equipment.**
-	- 433MHz OR 315MHz Transmitters (e.g. <https://tinyurl.com/yaldp5hx> ) 
+	- 433MHz OR 315MHz Transmitters (e.g. <https://www.aliexpress.com/item/1347349030.html> ) Remember to specify the vendor whether uyou need 433 or 325 MHz!!!
 	- SDR device to analyze RF packets with URH (e.g. RTL-SDR, LimeSDR, HackRF, etc.)
-	- Any RF enabled device (e.g. power-sockets, alarm systems, etc. Example: <https://tinyurl.com/yaorrapx> )
-  - 433MHz AND 315MHz Receiver:  as RX, I recommend the one from this <https://tinyurl.com/y8f7tocs> because I discovered that (despite is sold as 433MHz) it can be used to sniff ALSO 315MHz :)
-		
+	- Any RF enabled device (e.g. power-sockets, alarm systems, etc. Example: <https://www.aliexpress.com/item/32424721685.html> )
+
+[o] **Wiring of external 433/315MHz TX:**<br/>
+GND >> GND<br/>
+DATA >> D11/D7<br/>
+VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
+
+[o] **Wiring of external 433/315MHz RX:**<br/>
+GND >> GND<br/>
+DATA >> D3<br/>
+VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
+
+
 - **In case you want to test the Mousejacking feature you will need a vulnerable keyboard:**
 	- Microsoft Wireless Mouse 1000 **[TESTED, Vulnerable]**
 	- Logitech Wireless Touch Keyboard K400r **[TESTED, Vulnerable]**
@@ -62,17 +78,11 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 	- Logitech K320 Wireless Keyboard
 	- Dell KM636 Wireless Mouse and Keyboard
 	- AmazonBasics MG-0975 Wireless Mouse
+
+- **In case you are planning to use the dual Antenna Case, you can replace the 2G PCB antenna with the following one**
+	- https://www.aliexpress.com/item/32924422554.html
 	
 
-[o]**Wiring of external 433/315MHz TX:**<br/>
-GND >> GND<br/>
-DATA >> D11/D7<br/>
-VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
-
-[o]**Wiring of external 433/315MHz RX:**<br/>
-GND >> GND<br/>
-DATA >> D3<br/>
-VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
 
 # Pinout:
 
