@@ -6,7 +6,7 @@ WHID Elite is a GSM-enabled Open-Source Multi-Purpose Offensive Device that allo
 
 Some of the main features of WHIDelite are:
 - Remote control over GSM/2G Networks
-- Remote HID Injection
+- [Remote HID Injection](https://www.youtube.com/watch?v=tuoT-cPldMk)
 - [Bypass Air-Gapped Environments](https://twitter.com/LucaBongiorni/status/963693468282445824)
 - [Support for Mousejacking Attacks](https://twitter.com/WHID_Injector/status/1050482412218707968)
 - [Radio Hacking related Attacks](https://twitter.com/WHID_Injector/status/1065332359426392068)
