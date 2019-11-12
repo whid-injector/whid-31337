@@ -13,6 +13,9 @@ Some of the main features of WHIDelite are:
 - [Bypass Air-Gapped Environments](https://twitter.com/LucaBongiorni/status/963693468282445824)
 - [Support for Mousejacking Attacks](https://twitter.com/WHID_Injector/status/1050482412218707968)
 - [Radio Hacking related Attacks](https://twitter.com/WHID_Injector/status/1065332359426392068)
+- [Radio Hacking related Attacks](https://medium.com/@LucaBongiorni/electrocuting-testicles-with-whid-elite-6f52b7fb84bf)
+- [Radio Hacking related Attacks](https://medium.com/@LucaBongiorni/hacking-radio-blasting-systems-for-fun-explosions-8aa6cc94966a)
+- [Radio Hacking related Attacks](https://twitter.com/WHID_Injector/status/1124037932887740419)
 - [Embedded USB HUB to easily weaponize USB Gadgets](https://twitter.com/WHID_Injector/status/1067517057074380806)
 - GPS Location of WHIDElite
 - [Remote Audio Surveillance](https://twitter.com/WHID_Injector/status/1005464541336129536)
