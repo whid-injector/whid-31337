@@ -54,7 +54,7 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 	- https://www.aliexpress.com/item/1150268297.html
 	
 - **In case you would like to test the ASKTX, ASKRX and JAM commands as well, you will need an external TX connected on the D11 and/or D7 Pins[o] and the RX on the D3 pin [o]. And a test lab equipment.**
-	- 433MHz OR 315MHz Transmitters (e.g. <https://www.aliexpress.com/item/1347349030.html> ) Remember to specify the vendor whether uyou need 433 or 325 MHz!!!
+	- 433MHz OR 315MHz Transmitters (e.g. <https://www.aliexpress.com/item/1347349030.html> ) Remember to specify the vendor whether you need 433 or 325 MHz!!!
 	- SDR device to analyze RF packets with URH (e.g. RTL-SDR, LimeSDR, HackRF, etc.)
 	- Any RF enabled device (e.g. power-sockets, alarm systems, etc. Example: <https://www.aliexpress.com/item/32424721685.html> )
 
