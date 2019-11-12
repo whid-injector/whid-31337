@@ -58,15 +58,15 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 	- SDR device to analyze RF packets with URH (e.g. RTL-SDR, LimeSDR, HackRF, etc.)
 	- Any RF enabled device (e.g. power-sockets, alarm systems, etc. Example: <https://www.aliexpress.com/item/32424721685.html> )
 
-[o] **Wiring of external 433/315MHz TX:**<br/>
-GND >> GND<br/>
-DATA >> D11/D7<br/>
-VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
+	[o] **Wiring of external 433/315MHz TX:**<br/>
+	GND >> GND<br/>
+	DATA >> D11/D7<br/>
+	VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
 
-[o] **Wiring of external 433/315MHz RX:**<br/>
-GND >> GND<br/>
-DATA >> D3<br/>
-VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
+	[o] **Wiring of external 433/315MHz RX:**<br/>
+	GND >> GND<br/>
+	DATA >> D3<br/>
+	VCC >> VCC<br/> Use the P3 5V Vcc pin to power it. (If you are planning to use it as portable device, do use a powerbank)
 
 
 - **In case you want to test the Mousejacking feature you will need a vulnerable keyboard:**
