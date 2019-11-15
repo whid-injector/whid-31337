@@ -6,7 +6,7 @@ WHID Elite is a GSM-enabled Open-Source Multi-Purpose Offensive Device that allo
 
 * [Aliexpress Shop](https://www.aliexpress.com/item/4000357298489.html>)
 
-** The Author has no profit out of the Cactus WHID sales. But you can always buy him an Italian Coffee :) <a href='https://ko-fi.com/X7X6L82L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+** The Author has no profit out of WHIDelite sales. But you can always buy him an Italian Coffee :) <a href='https://ko-fi.com/X7X6L82L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 
 ![image](https://user-images.githubusercontent.com/26245612/68674302-48859480-055e-11ea-9c61-b3a78238d53f.png)
