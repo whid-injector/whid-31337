@@ -57,7 +57,8 @@ void process_rf_value(RCSwitch rfswitch)
             Serial.print(F("Sending: "));
             Serial.println(value + i);
             rfswitch.send(value + i, 24); //24bit Alarms, Crane, Blasting System
-            //rfswitch.send(value + i, rfswitch.getReceivedBitlength()); //auto-finder bits lenght payload
+            //rfswitch.send(value + i, rfswitch.getReceivedBitlength()); //24bit Alarms, Crane, Blasting System
+        }
         Serial.println(F("[O] Packets Sent!"));
         Serial.println(F("-----------------------------------------------------------------------------------------------------"));
         // reset the switch to allow more data to come
