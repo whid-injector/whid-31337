@@ -43,17 +43,17 @@ void process_rf_value(RCSwitch rfswitch)
         }
         
         Serial.println(str);
-        delay(1000);
+        delay(500);
         Serial.println(F("[O] Sending back the packet sniffed in 3 seconds..."));
-        delay(1000);
+        delay(500);
         Serial.println(F("[O] Sending back the packet sniffed in 2 seconds..."));
-        delay(1000);
+        delay(500);
         Serial.println(F("[O] Sending back the packet sniffed in 1 second..."));
-        delay(1000);
+        delay(500);
         Serial.println(F("[O] BOOOM!"));
         //rfswitch.send(value, rfswitch.getReceivedBitlength());
         for (int i = 0; i <= 9; i++) { 
-            delay(1500);
+            delay(1000);
             Serial.print(F("Sending: "));
             Serial.println(value + i);
             rfswitch.send(value + i, 24); //24bit Alarms, Crane, Blasting System
