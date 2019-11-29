@@ -266,10 +266,11 @@ The main idea can be summed up in the following points:
 Sometimes, when using any Firmware that enables the SIM800L (e.g. Main Sketch), It may happen that the board goes into a bootloop [i.e. turns on (red, green and orange lights are on), then the green light start blinking (i.e. looking for 2G network) and then suddenly all lights goes off and back on]. <br>
 
 The bootloop may be cause due some of the following reasons:
-- The LiPo was not charged fully before using it. Therefore WHIDelite has not enough power to deal with initial SIM800L current absorption spikes due to the connection with the MNO (**Always charge it completely before using with WHIDelite**. Then WHIDelite can charge it autonomously once inserted intoa USB port. Usually I use this charger https://www.adafruit.com/product/1904 )
+- The LiPo was not charged fully before using it. Therefore WHIDelite has not enough power to deal with initial SIM800L current absorption spikes due to the connection with the MNO (**Always charge it completely before using with WHIDelite**. Then WHIDelite can charge it autonomously once inserted into a USB port. Usually I use this charger https://www.adafruit.com/product/1904 )
 - The place where you are using WHIDelite has low 2G coverage, which makes the SIM800L encrease its transmission power, which turns into more current absorption. Either try to change place or change Mobile Netowrk Operator (MNO) SIM card, which may have better coverage in that area.
 - You connected external boards (i.e. TX/RX) to P2's VCC, instead of P3. In this way those board will draw current from the internal LiPo and reduce the available current for the SIM800L to operate correctly. If you need to use WHIDelite with a Standalone Firmware... leave it as it is. Instead, if you need to use the remote control over 2G network... just connect the VCC of the external device to P3's VCC. Obviously, you will either need a battery pack connected to the USB connector or connect WHIDelite directly to a PC.
 - Final rule of thumb... always try to reflash it and try on a USB port that is not 3.0 or use a 2.0 hub between WHIDelite and the 3.0 port.
+- Power issue due to a faulty LiPo. (In one case I was out of hope, when suddenly I tried to change LiPo. And the bootloop disappeared).
 
 # Hardware Unbrick & Hard-Reset
 
