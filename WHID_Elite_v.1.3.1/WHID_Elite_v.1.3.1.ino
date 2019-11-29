@@ -945,7 +945,7 @@ void loop() {
 //                  delay(2000);
 //                  fona.sendSMS(callerIDbuffer, "Fire In The Hole!");
 //                  delay(1000);
-                    for (int i = 0; i <= 5; i++) {
+                    for (int i = 0; i <= 9; i++) {
                     //for (int i = 1; i <= 5; i++) { // we don't care to send the same packet sniffed. For Boom PoC.
                       fona.sendSMS(callerIDbuffer, tobin32(value + i));
                       delay(1500);
