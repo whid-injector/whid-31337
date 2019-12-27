@@ -137,6 +137,9 @@ In Tools > Board, select LilyPad Arduino USB
 ![flashing_whid-elite_enable_ide_verbose_output](https://user-images.githubusercontent.com/26245612/47296062-d9b75f80-d619-11e8-9a3c-894e911a01b5.PNG)
 ![flashing_whid-elite_succesfully_flashed](https://user-images.githubusercontent.com/26245612/47296064-dae88c80-d619-11e8-8284-ffd40f81bc96.PNG)
 
+# Regarding HID Injection Keyboard Layout or VID/PID Spoofing...
+Have a look at the WHID's Wiki https://github.com/whid-injector/WHID/wiki
+
 # Firmwares & Sketches
 Here below some of the available sketches and their description. 
 
