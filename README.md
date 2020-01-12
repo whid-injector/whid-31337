@@ -127,7 +127,7 @@ I recommend to add a switch or JST connectors between the LiPo and the PCB. Thus
 	- Install RF24 by TMRh20 (works on latest  version 1.1.7)
 	
 	- Install rc-switch by sui77 (works on latest  version 2.6.2)
-- In Sketch > Include Library > Add .ZIP Library  install the following ZIP library https://github.com/whid-injector/whid-elite-beta/blob/master/WHID_Elite_v.1.3.0_RX_OS_B00M/FingerprintUSBHost.zip
+- In Sketch > Include Library > Add .ZIP Library  install the following ZIP library https://github.com/whid-injector/whid-31337/blob/master/Dependencies-Libraries/FingerprintUSBHost.zip
 
 	
 # Flashing Firmware:
