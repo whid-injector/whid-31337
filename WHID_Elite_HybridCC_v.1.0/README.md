@@ -16,7 +16,7 @@ New commands:
 
 2. Add your APN, USER and PASSWORD in the hybridC2 function:
 
-![Enable HybridC2](https://github.com/joelsernamoreno/Bwhid-31337/blob/master/WHID_Elite_HybridCC_v.1.0/images/enablehybrid.png)
+![Enable HybridC2](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridCC_v.1.0/images/enablehybrid.png)
 
 3. Add your web server URL in the next section of the code:
 
