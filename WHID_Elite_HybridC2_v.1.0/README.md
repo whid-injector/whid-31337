@@ -14,19 +14,15 @@ New commands:
 
 1. Open the WHID_Elite_HybridCC_v.1.0 skecth
 
-2. Add your APN, USER and PASSWORD in the hybridC2 function:
+2. Add your web server URL in the next section of the code:
 
-![Enable HybridC2](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridCC_v.1.0/images/enablehybrid.png)
+![Web Server Configuration](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridC2_v.1.0/images/webserver_conf.png)
 
-3. Add your web server URL in the next section of the code:
-
-![Web Server Configuration](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridCC_v.1.0/images/webserver_conf.png)
-
-4. Compile and upload the code to WHID Elite.
+3. Compile and upload the code to WHID Elite.
 
 **Note:** You can uncomment the following lines to debug the hybridC2 code on the serial monitor.
 
-![Debug](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridCC_v.1.0/images/debug.png)
+![Debug](https://github.com/joelsernamoreno/whid-31337/blob/master/WHID_Elite_HybridC2_v.1.0/images/debug.png)
 
 # Use the HybridC2 function with WHID Elite
 
