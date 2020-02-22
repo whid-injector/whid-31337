@@ -12,7 +12,7 @@ New commands:
 
 # HybridC2 configuration:
 
-1. Open the WHID_Elite_HybridCC_v.1.0 skecth
+1. Open the WHID_Elite_HybridCC_v.1.0 skecth.
 
 2. Add your web server URL in the next section of the code:
 
@@ -26,9 +26,9 @@ New commands:
 
 # Use the HybridC2 function with WHID Elite
 
-1. Send "hybridC2:" via SMS to WHID Elite to enable the hybrid function
+1. Send "hybridC2:" via SMS to WHID Elite to enable the hybrid function.
 
-2. Use any exfiltration command (example: airgapnix:whoami)
+2. Use any exfiltration command (example: airgapnix:whoami).
 
 3. Disable hybrid communication by sending an SMS to WHID Elite: hybridC2off:
 
