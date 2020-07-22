@@ -74,6 +74,10 @@ void setup() {
     Serial.println(F("Couldn't find FONA"));
     while (1);
   }
+	
+  fona.unlockSIM("1234"); // ### Change this to your SIM's Pincode (if any) ###
+  //fonaSerial->print("AT+CLCK=\"SC\",0,\"1234\"\r\n"); // ### This remove permanently your SIM's Pincode ###
+	
   type = fona.type();
   Serial.println(F("FONA is OK"));
   Serial.print(F("Found "));
