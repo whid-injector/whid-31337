@@ -201,7 +201,7 @@ Simple sketch that does RF replay attack. It sniffs, wait 10s and then replays t
 
 # Operational Features (a.k.a. commands):
 I assume that at this point you have:
-- Flashed WHID Elite with the WHID_Elite_1.3.x.ino
+- Flashed WHID Elite with the WHID_Elite_1.x.x.ino
 - Inserted a working SIM card
 - Connected a LiPo battery 
 - Plugged WHIDElite into the USB port of a target PC…
@@ -212,8 +212,8 @@ If everything is setup, you should be able to send and receive SMSes from/to WHI
 ![WHID Elite commands](https://user-images.githubusercontent.com/26245612/62884983-716c7280-bd40-11e9-972f-ecb577b56397.PNG)
 
 I believe are self explanatory.<br/>
-If you are curious to see what is happening under the hood for each command, have a look at the WHID_Elite_v.1.2.x.ino<br/>
-**To enjoy them you HAVE TO use the WHID_Elite_v.1.3.x.ino!**
+If you are curious to see what is happening under the hood for each command, have a look at the WHID_Elite_v.1.x.x.ino<br/>
+**To enjoy them you HAVE TO use the WHID_Elite_v.1.x.x.ino!**
 
 # Regarding ASKTX:
 As the command name says, it is transmitting a very particular binary sequence through an ASK modulation with OOK encoding (by default is transmitted 1 time only). <br/>
