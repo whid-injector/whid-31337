@@ -104,7 +104,7 @@ I recommend to add a switch or JST connectors between the LiPo and the PCB. Thus
 
 # How and Where to Start:
 
-1. Take a 2G SIM card and insert into its slot.
+1. Take a 2G SIM card and insert into its slot (if you use a simcard with pincode enabled, you need to specify that pincode in the sketches [1] [2] OR disable it!).
 2. Attach the antenna on the ufl connector. (this is important. Without antenna, the SIM800 will have stability issues on getting a stable connection with the Mobile Operator)
 3. Connect the LiPo battery (note: it must be >500mAh for whidelite to work properly.) (For testing purposes I prefer to solder a cable with a JST connector or a switch in the middle in order to disable the LiPo on request, if not used for longer periods)
 4. Install all dependencies needed to flash the firmwares.
@@ -112,6 +112,10 @@ I recommend to add a switch or JST connectors between the LiPo and the PCB. Thus
 6. Flash the firmware WHID_TestSuite.ino and use SerialMonitor to see if everything works fine. To get the main menu, press ? and ENTER. Sometimes, some SIM cards already hold in it some SMSes. You will have to enumerate them with N command. And then delete each of them with command d. This will empty all SMS slots and let WHID Elite work properly.
 7. in WHID_TestSuite.ino there is the command K that tests for Keystrokes injection on a Windows machine. (In the future, there will be more tests in this sketch. For now is mainly used to check if SIM800 works fine and to clean pre-existing SMSes.)
 8. If everything works fine, you can flash the main firmware: WHID_Elite_x.x.x.ino. This firmware will give you access to the commands described below!
+
+[1] https://github.com/whid-injector/whid-31337/blob/master/WHIDElite_TestSuite_v.1.1/WHIDElite_TestSuite_v.1.1.ino#L78
+
+[2] https://github.com/whid-injector/whid-31337/blob/master/WHID_Elite_v.1.3.1/WHID_Elite_v.1.3.1.ino#L566
 	
 # Videos Tutorials [MUST WATCH]:
 
