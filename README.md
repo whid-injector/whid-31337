@@ -48,7 +48,15 @@ Disclaimer: This research tool has been designed to be used ONLY by experienced 
 	Beside WHID Elite itself, the only further hardware needed for testing WHID Elite is a LiPo battery of at least 500mAh (PERSONALLY I RECOMMEND >600mAh. BETTER >1000mAh). This requirement is dictated by the GSM module SIM800, which in some conditions it requires more Ampere than a standard 500mAh USB port can provide. **It is NOT recommended to run WHID-Elite WITHOUT LiPo!!!**
 	
  - **JST-PH 1.25 male/female connectors** To connect the LiPo battery, I do recommend to use JST-PH 1.25 male/female connectors. Thus you will be able to easily detach it when not in use. (e.g. <https://tinyurl.com/y9kmq27b> )
+
+
  
+## WHID's Trainings
+The 𝙊𝙛𝙛𝙚𝙣𝙨𝙞𝙫𝙚 𝙃𝙖𝙧𝙙𝙬𝙖𝙧𝙚 𝙃𝙖𝙘𝙠𝙞𝙣𝙜 𝙏𝙧𝙖𝙞𝙣𝙞𝙣𝙜 is a Self-Paced training including Videos, a printed Workbook and a cool Hardware Hackit Kit. And... you get everything shipped home Worldwide! 🌍🔥😎<br>
+For more info... ➡ https://www.whid.ninja/store <br><br>
+[![WHID's Trainings](https://files.gandi.ws/64/2e/642e05f6-84e1-48fe-8a59-d678c7d635e3.PNG)](https://www.youtube.com/watch?v=zbUuBZJIHkE)
+
+
 
  
 # Optional Hardware Needed:
